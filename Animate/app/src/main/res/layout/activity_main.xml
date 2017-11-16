@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button android:background="#518"
+            android:id="@+id/Button01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="startAnimation"
+            android:text="Rotate" />
+
+        <Button
+            android:background="#961"
+            android:id="@+id/Button04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="startAnimation"
+            android:text="Group" >
+        </Button>
+
+        <Button
+            android:background="#F12"
+            android:id="@+id/Button03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="startAnimation"
+            android:text="Fade" />
+
+        <Button
+            android:background="#F65"
+            android:id="@+id/Button02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="startAnimation"
+            android:text="Animate" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView1" android:layout_below="@+id/test"      android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Touch Me!"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/test"
+        android:layout_marginTop="120dp"
+        android:background="#000"
+        android:src="@drawable/icon" />
+
+
+</RelativeLayout>
